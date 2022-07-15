@@ -46,6 +46,8 @@ Route::post('/update-product/{id}', [ShopifyController::class, 'updateProducts']
 Route::get('/delete-product/{id}', [ShopifyController::class, 'deleteProducts']);
 
 
+
+
 Route::get('/', function () {
     return view('welcome');
 })->middleware(['verify.shopify'])->name('home');
